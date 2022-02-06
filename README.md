@@ -71,4 +71,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ### APP Url
 
-react-app-todo-kingring.vercel.app
+Preview: [https://react-app-todo-kingring.vercel.app](https://react-app-todo-kingring.vercel.app)
+Production: [https://react-app-todo-xi.vercel.app](https://react-app-todo-xi.vercel.app)
