@@ -50,7 +50,7 @@ function App(props) {
             name: name,
             completed: false,
         };
-        setTasks([...tasks, newTask]);
+        setTasks([newTask, ...tasks]);
     }
 
     function toggleTaskCompleted(id) {
