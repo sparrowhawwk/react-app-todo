@@ -106,7 +106,9 @@
 .c-cb > label {
     margin-left: 30px;
     padding: 3px 15px 0;
+    margin-bottom: 10px;
     cursor: pointer;
+    word-break: break-all;
     touch-action: manipulation;
 }
 .c-cb > label::before {
