@@ -30,10 +30,10 @@ export default function Todo(props) {
                     onChange={handleChange}
                 />
             </div>
-            <div className="btn-group">
+            <div className="customBtn">
                 <button
                     type="button"
-                    className="btn todo-cancel"
+                    className="btn todo-cancel btn-outline-dark me-2"
                     onClick={() => setEditing(false)}
                 >
                     Cancel
@@ -41,7 +41,7 @@ export default function Todo(props) {
                         renaming {props.name}
                     </span>
                 </button>
-                <button type="submit" className="btn btn__primary todo-edit">
+                <button type="submit" className="btn btn-outline-dark todo-edit">
                     Save
                     <span className="visually-hidden">
                         new name for {props.name}
@@ -52,8 +52,8 @@ export default function Todo(props) {
     );
 
     const viewTemplate = (
-        <div className="stack-small">
-            <div className="c-cb">
+        <div className="stack-small row">
+            <div className="c-cb col-md-9 col-sm-12">
                 <input
                     id={props.id}
                     type="checkbox"
@@ -64,17 +64,17 @@ export default function Todo(props) {
                     {props.name}
                 </label>
             </div>
-            <div className="btn-group">
+            <div className="col-md-3 col-sm-12 text-md-end">
                 <button
                     type="button"
-                    className="btn"
+                    className="btn btn-dark me-2"
                     onClick={() => setEditing(true)}
                 >
                     Edit <span className="visually-hidden">{props.name}</span>
                 </button>
                 <button
                     type="button"
-                    className="btn btn__danger"
+                    className="btn btn-danger"
                     onClick={() => props.deleteTask(props.id)}
                 >
                     Delete <span className="visually-hidden">{props.name}</span>
