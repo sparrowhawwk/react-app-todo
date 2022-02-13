@@ -97,7 +97,7 @@ function App(props) {
     }, [tasks.length, prevTaskLength]);
 
     return (
-        <div className="grid justify-items-center">
+        <div className="grid justify-items-center sm:container sm:mx-auto">
             <div className="border border-slate-200 pt-2 pr-10 pl-10 pb-2 mt-10 drop-shadow-lg">
                 <h1 className="text-3xl font-bold tracking-widest text-blue-600 text-center mt-5 mb-5">
                     TodoMatic

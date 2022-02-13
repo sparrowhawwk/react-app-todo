@@ -36,7 +36,7 @@ export default function Todo(props) {
         <form className="stack-small" onSubmit={handleSubmit}>
             <div className="form-group">
                 <label
-                    className="todo-label block pb-2 pt-3 text-slate-600"
+                    className="todo-label block pb-2 pt-3 text-slate-600 break-all"
                     htmlFor={props.id}
                 >
                     New name for {props.name}
@@ -80,7 +80,7 @@ export default function Todo(props) {
                     onChange={() => props.toggleTaskCompleted(props.id)}
                     className="px-2 py-1 p-2 mr-2 border border-slate-300"
                 />
-                <label className="todo-label" htmlFor={props.id}>
+                <label className="todo-label break-all" htmlFor={props.id}>
                     {props.name}
                 </label>
             </div>
