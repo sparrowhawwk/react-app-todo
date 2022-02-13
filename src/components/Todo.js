@@ -43,7 +43,7 @@ export default function Todo(props) {
                 </label>
                 <input
                     id={props.id}
-                    className="border border-slate-400 mr-2 px-3 py-2 rounded-none text-sm shadow-sm placeholder-slate-400 w-full"
+                    className="border border-slate-400 mr-2 px-3 py-2 rounded-none text-sm shadow-sm placeholder-slate-400 w-full focus:outline-none focus-visible:outline-none"
                     type="text"
                     value={newName}
                     onChange={handleChange}
