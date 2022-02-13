@@ -98,13 +98,18 @@ function App(props) {
 
     return (
         <div className="grid justify-items-center">
-            <div className="border border-slate-200 pt-2 pr-5 pl-5 pb-2">
+            <div className="border border-slate-200 pt-2 pr-10 pl-10 pb-2 mt-10 drop-shadow-lg">
                 <h1 className="text-3xl font-bold tracking-widest text-blue-600 text-center mt-5 mb-5">
                     TodoMatic
                 </h1>
                 <Form addTask={addTask} />
                 <div className="text-center mb-5">{filterList}</div>
-                <h2 id="list-heading" tabIndex="-1" ref={listHeadingRef}>
+                <h2
+                    id="list-heading"
+                    tabIndex="-1"
+                    ref={listHeadingRef}
+                    className="tracking-wide text-slate-500 text-xl"
+                >
                     {headingText}
                 </h2>
                 <ul
