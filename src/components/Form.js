@@ -23,7 +23,7 @@ function Form(props) {
             <input
                 type="text"
                 id="new-todo-input"
-                className="border border-slate-400 mr-2 px-3 py-2 rounded-none text-sm shadow-sm placeholder-slate-400 w-3/4 focus:outline-none focus-visible:outline-none"
+                className="border border-slate-400 mr-2 px-3 py-2 rounded-none text-sm shadow-sm placeholder-slate-400 w-2/3 focus:outline-none focus-visible:outline-none"
                 name="text"
                 autoComplete="off"
                 value={name}
