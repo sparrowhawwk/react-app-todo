@@ -11,15 +11,11 @@ function usePrevious(value) {
 }
 
 export default function Todo(props) {
-    const [isEditing, setEditing] = useState(false);
-
-    const [newName, setNewName] = useState('');
-
-    const editFieldRef = useRef(null);
-
-    const editButtonRef = useRef(null);
-
-    const wasEditing = usePrevious(isEditing);
+    const [isEditing, setEditing] = useState(false),
+        [newName, setNewName] = useState(''),
+        editFieldRef = useRef(null),
+        editButtonRef = useRef(null),
+        wasEditing = usePrevious(isEditing);
 
     function handleChange(e) {
         setNewName(e.target.value);
