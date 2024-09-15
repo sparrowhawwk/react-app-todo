@@ -29,7 +29,7 @@ function Form(props) {
                 value={name}
                 onChange={handleChange}
             />
-            <button type="submit" className="btn btn__primary btn__lg">
+            <button type="submit" className="btn btn-block btn-primary btn__lg">
                 Add
             </button>
         </form>
